@@ -65,7 +65,7 @@ if __name__ == "__main__":
     outputs = [
         gr.Image(type="numpy", label="Filtered Image"),
         gr.Plot(label="Input Histogram"),
-        gr.Plot(label="Output Histogram")
+        gr.Plot(label="Output Histogram"),
     ]
 
     gr.Interface(fn=process_image, inputs=inputs, outputs=outputs, title="Apply Image Filters").launch()
